@@ -49,3 +49,38 @@ body{
 }
 
 
+#allVoicesList {
+  align-items: center;
+
+
+}
+
+#recordBtID{
+  display: none;
+}
+
+.imageMicr{
+  font-size: 100px;
+}
+
+.micrRec{
+  align-content: center;
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: none;
+  outline: none;
+  color: dimgray;
+  background-color: white;
+  transition: color 0.1s ease-in-out;
+}
+
+#allVoicesList{
+  display: table;
+  margin: 0 auto;
+
+}
+
