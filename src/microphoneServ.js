@@ -6,16 +6,7 @@ export function handleMicrophoneClick() {
     let elems = document.getElementsByClassName('recording')
     const recordBtn = document.getElementById('recordBtID')
 
-    // if (elems.length > 0){
-    //     closeRecorder();
-    //     recordBtn.classList.toggle('recording')
-    //     recordBtn.style.color = 'dimgray'
-    // }
-    // else{
-    //     recordBtn.style.color = 'red'
-    //     recordMessage()
-    //     recordBtn.classList.toggle('recording')
-    // }
+
     if (elems.length ==0){
         console.log(1)
         recordBtn.style.color = 'red'

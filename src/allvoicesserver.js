@@ -1,7 +1,9 @@
 export async function allVoice() {
     const response = await fetch('https://voicy-speaker.herokuapp.com/voices')
     const data = await response.json()
-    for (let i = data.length - 5; i < data.length; i++) {
+    let i = data.length < 5 ? 0 : data.length - 5
+
+    for (i; i < data.length; i++) {
         //getting audio messages and creating audio file
         const audio = document.createElement('audio');
         audio.controls = true
